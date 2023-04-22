@@ -1,7 +1,7 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 
-if (start) game_start();
+if (global.start) game_start();
 
 
 //Debug

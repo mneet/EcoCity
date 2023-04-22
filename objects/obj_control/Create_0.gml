@@ -3,4 +3,5 @@
 
 global.dialogoCntrl = false;
 
-global.recCmpltd = false;
+global.recCmpltd = false; 
+global.start = false;

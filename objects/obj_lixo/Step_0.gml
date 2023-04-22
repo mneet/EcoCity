@@ -17,21 +17,11 @@ if (selecionado)
 		
 }
 
-switch (tipo_lixo)
+
+
+if (!global.start)
 {
-	case "M":
-		sprite_index = spr_metal;
-		break;
-	case "O":
-		sprite_index = spr_organico;
-		break;
-	case "PA":
-		sprite_index = spr_papel;
-		break;
-	case "PL":
-		sprite_index = spr_plastico;
-		break;
-	case "V":
-		sprite_index = spr_vidro;
-		break;		
+	visibilidade = lerp(visibilidade, 0, 0.2);
+	image_alpha = visibilidade;
+	if (image_alpha = 0) instance_destroy(self);
 }

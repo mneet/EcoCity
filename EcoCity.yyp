@@ -47,6 +47,7 @@
     {"id":{"name":"spr_lxra_papel","path":"sprites/spr_lxra_papel/spr_lxra_papel.yy",},"order":0,},
     {"id":{"name":"obj_transicao","path":"objects/obj_transicao/obj_transicao.yy",},"order":0,},
     {"id":{"name":"spr_lxra_metal","path":"sprites/spr_lxra_metal/spr_lxra_metal.yy",},"order":1,},
+    {"id":{"name":"obj_game_start","path":"objects/obj_game_start/obj_game_start.yy",},"order":1,},
     {"id":{"name":"scr_funcoes","path":"scripts/scr_funcoes/scr_funcoes.yy",},"order":1,},
     {"id":{"name":"spr_lxra_vidro","path":"sprites/spr_lxra_vidro/spr_lxra_vidro.yy",},"order":3,},
     {"id":{"name":"rm_reciclagem","path":"rooms/rm_reciclagem/rm_reciclagem.yy",},"order":1,},

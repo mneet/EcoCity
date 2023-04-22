@@ -20,6 +20,7 @@ text[text_current] = string_wrap(text[text_current], text_width);
 
 controleDialogo = function()
 {
+	global.dialogoCntrl = false;
 	switch (rmOrigem)
 	{
 		case "Rec":

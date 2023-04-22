@@ -1,12 +1,13 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 
-start = false;
-timer_total = 20 * room_speed;
+timer_total = 5 * room_speed;
 timer = timer_total;
 pontos = 0;
 lixo_respawn_cd = room_speed * 2;
 lixo_respawn = lixo_respawn_cd;
+
+
 
 
 if (global.recCmpltd = false)
@@ -50,7 +51,7 @@ game_start = function()
 	}
 	else 
 	{
-		start = false;
+		global.start = false;
 		timer = timer_total;
 	}
 	
