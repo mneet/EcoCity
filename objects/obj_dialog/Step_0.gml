@@ -13,7 +13,8 @@ if (keyboard_check_pressed(vk_space))
 		text_current += 1;
 		if (text_current > text_last)
 		{
-			room_restart();
+			controleDialogo();
+			instance_destroy(self);
 		}
 		else
 		{

@@ -13,14 +13,25 @@ text_x		 = 32;
 text_y		 = 32;
 char_current = 1;
 char_speed   = 0.5;
+rmOrigem	 = 0;
 
 
 text[text_current] = string_wrap(text[text_current], text_width);
 
+controleDialogo = function()
+{
+	switch (rmOrigem)
+	{
+		case "Rec":
+			global.recCmpltd = true;
+		break;
+	}
+}
+
 
 // Codigo para ser usado ao instanciar esse objeto:
 /*
-	var _inst = instance_create_layer(x, y, layer, obj_dialog);
+	var _inst = instance_create_layer(x, y, layer, obj_dialogo);
 	with(_inst)
 	    {
 	    text[0] = "This is some text";
