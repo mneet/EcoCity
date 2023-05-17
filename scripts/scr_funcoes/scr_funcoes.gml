@@ -6,5 +6,6 @@ function screenshake(_shake)
 	//Criando o screenshake
 	var screen = instance_create_layer(0, 0, "Instances", obj_scrnshake);
 	global.shake = _shake;
+	show_debug_message(global.shake);
 }
 

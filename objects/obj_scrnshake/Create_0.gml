@@ -1,7 +1,7 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 
-global.shake = 0;
+
 
 //Método
 shake_screen = function()
