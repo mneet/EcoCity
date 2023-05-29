@@ -32,7 +32,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Lixo","folderPath":"folders/Sprites/Reciclagem/Lixo.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"OLD","folderPath":"folders/Objects/Quizz/OLD.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,
@@ -41,7 +40,6 @@
     "IDEVersion": "2023.4.0.84",
   },
   "resources": [
-    {"id":{"name":"obj_quizzControlOLD","path":"objects/obj_quizzControlOLD/obj_quizzControlOLD.yy",},},
     {"id":{"name":"obj_popup","path":"objects/obj_popup/obj_popup.yy",},},
     {"id":{"name":"spr_plastico2","path":"sprites/spr_plastico2/spr_plastico2.yy",},},
     {"id":{"name":"obj_lixo","path":"objects/obj_lixo/obj_lixo.yy",},},
@@ -61,6 +59,7 @@
     {"id":{"name":"spr_lxra_papel","path":"sprites/spr_lxra_papel/spr_lxra_papel.yy",},},
     {"id":{"name":"obj_transicao","path":"objects/obj_transicao/obj_transicao.yy",},},
     {"id":{"name":"spr_lxra_metal","path":"sprites/spr_lxra_metal/spr_lxra_metal.yy",},},
+    {"id":{"name":"obj_dialogOld","path":"objects/obj_dialogOld/obj_dialogOld.yy",},},
     {"id":{"name":"spr_organico","path":"sprites/spr_organico/spr_organico.yy",},},
     {"id":{"name":"obj_quizzCntrl","path":"objects/obj_quizzCntrl/obj_quizzCntrl.yy",},},
     {"id":{"name":"Sem_T_tulo_122","path":"sprites/Sem_T_tulo_122/Sem_T_tulo_122.yy",},},

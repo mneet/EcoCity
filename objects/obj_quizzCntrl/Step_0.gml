@@ -2,4 +2,12 @@
 // Você pode escrever seu código neste editor
 
 
-criaPrgnt();
+if (global.start) 
+{
+	if (listaCntrl = false)
+	{
+		criaLista();
+		listaCntrl = true;
+	}
+	criaPrgnt();
+}

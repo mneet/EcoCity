@@ -9,10 +9,9 @@ if (!txtCntrl)
 	with(_inst)
 		{
 		text_last = 0;
-		text_width = 690;
+		text_width = 590;
 		text_x = x + 5;
 		text_y = y + 5;
-		text[text_current] = string_wrap(text[text_current], text_width);
 		}
 	txtCntrl = true;
 }

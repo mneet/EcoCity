@@ -24,7 +24,6 @@ if (_mouse_sobre)
 		    text_width = 150;
 		    text_x = x;
 		    text_y = y;
-		    text[text_current] = string_wrap(text[text_current], text_width);
 		    }
 		popup = true
 	}

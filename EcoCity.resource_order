@@ -23,7 +23,6 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
-    {"name":"obj_quizzControlOLD","order":1,"path":"objects/obj_quizzControlOLD/obj_quizzControlOLD.yy",},
     {"name":"obj_popup","order":2,"path":"objects/obj_popup/obj_popup.yy",},
     {"name":"spr_plastico2","order":9,"path":"sprites/spr_plastico2/spr_plastico2.yy",},
     {"name":"obj_lixo","order":1,"path":"objects/obj_lixo/obj_lixo.yy",},
@@ -39,6 +38,7 @@
     {"name":"spr_organico2","order":5,"path":"sprites/spr_organico2/spr_organico2.yy",},
     {"name":"Sem_T_tulo_2","order":9,"path":"sprites/Sem_T_tulo_2/Sem_T_tulo_2.yy",},
     {"name":"spr_lxra_metal","order":1,"path":"sprites/spr_lxra_metal/spr_lxra_metal.yy",},
+    {"name":"obj_dialogOld","order":8,"path":"objects/obj_dialogOld/obj_dialogOld.yy",},
     {"name":"spr_organico","order":15,"path":"sprites/spr_organico/spr_organico.yy",},
     {"name":"obj_quizzCntrl","order":1,"path":"objects/obj_quizzCntrl/obj_quizzCntrl.yy",},
     {"name":"Sem_T_tulo_122","order":8,"path":"sprites/Sem_T_tulo_122/Sem_T_tulo_122.yy",},

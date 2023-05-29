@@ -16,4 +16,4 @@ if (char_current < _len)
 }
 
 var _str = string_copy(text[text_current], 1, char_current);
-draw_text(text_x, text_y, _str);
+draw_text_ext(text_x, text_y, _str, 25, text_width);
