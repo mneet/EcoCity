@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_lxra_plast",
-    "path": "sprites/spr_lxra_plast/spr_lxra_plast.yy",
+    "name": "spr_botao",
+    "path": "sprites/spr_botao/spr_botao.yy",
   },
   "spriteMaskId": null,
   "visible": true,

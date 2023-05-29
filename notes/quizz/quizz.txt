@@ -1,0 +1,20 @@
+Minigame Quizz
+
+Criação
+- Criar pergunta e 4 respostas
+- Determinar coteudo da pergunta e respostas
+- Apontar resposta correta
+
+Verificações
+- Verificar se pergunta esta ativa
+
+
+Pergunta -
+- Criar caixa de dialogo
+- Digitar texto
+
+Resposta -
+- Criar caixa de dialogo
+- Digitar texto
+- Verificar resposta correta
+- Apontar que pergunta foi respondida para Control

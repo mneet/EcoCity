@@ -29,7 +29,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_lxra_metal",
+    "path": "sprites/spr_lxra_metal/spr_lxra_metal.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

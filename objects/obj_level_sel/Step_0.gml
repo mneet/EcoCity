@@ -16,6 +16,7 @@ if (_mouse_sobre && !global.dialogoCntrl)
 		//Criando a transição
 		var _transicao = instance_create_layer(0, 0, "FX", obj_transicao);
 		_transicao.destino = destino;
+		global.start = false;
 	}
 }
 else

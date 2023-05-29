@@ -1,10 +1,9 @@
-/// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
+ /// @description Iniciando variáveis e métodos
 
-timer_total = 5 * room_speed;
+timer_total = 40 * room_speed;
 timer = timer_total;
 pontos = 0;
-lixo_respawn_cd = room_speed * 2;
+lixo_respawn_cd = room_speed * 1;
 lixo_respawn = lixo_respawn_cd;
 
 
@@ -32,9 +31,9 @@ if (global.recCmpltd = false)
 lixo_spawn = function()
 {
 	var xx = random_range(100, 1180);
-	var yy = random_range(50, 600);
+	var yy = random_range(60, 450);
 	
-	instance_create_layer(xx, yy, "Instances", obj_lixo);
+	instance_create_layer(xx, yy, "Lixo", obj_lixo);
 }
 
 game_start = function()
