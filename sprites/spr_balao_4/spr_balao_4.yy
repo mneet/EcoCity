@@ -1,11 +1,11 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_respQuizz",
-  "bbox_bottom": 101,
-  "bbox_left": 0,
-  "bbox_right": 511,
-  "bbox_top": 0,
+  "name": "spr_balao_4",
+  "bbox_bottom": 277,
+  "bbox_left": 14,
+  "bbox_right": 885,
+  "bbox_top": 18,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"156cff18-b8d5-4c47-a545-97866caed330",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4a87db60-e4b5-4cd5-a8bb-f0064e4f91e8",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 102,
+  "height": 300,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"5fd0baeb-38b4-4b93-8721-8b2377432895","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a227fa59-0080-4102-99cc-2ffd84050d76","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_respQuizz",
+    "name": "spr_balao_4",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"156cff18-b8d5-4c47-a545-97866caed330","path":"sprites/spr_respQuizz/spr_respQuizz.yy",},},},"Disabled":false,"id":"589258ae-f56b-418f-b356-003f78512a69","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4a87db60-e4b5-4cd5-a8bb-f0064e4f91e8","path":"sprites/spr_balao_4/spr_balao_4.yy",},},},"Disabled":false,"id":"8d101b3a-5525-4547-b0ba-5d9c5fc62d09","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 512,
+  "width": 900,
 }
