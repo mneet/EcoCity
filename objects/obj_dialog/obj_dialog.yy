@@ -29,7 +29,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "Chat",
+    "path": "sprites/Chat/Chat.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

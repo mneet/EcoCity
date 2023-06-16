@@ -1,6 +1,6 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
-
+draw_self();
 
 //Definindo fonte, cor e posição
 draw_set_font(fnt_dialog);

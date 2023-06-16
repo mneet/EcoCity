@@ -28,10 +28,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_direto",
-    "path": "sprites/spr_direto/spr_direto.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

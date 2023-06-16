@@ -2,7 +2,8 @@
 // Você pode escrever seu código neste editor
 
 destino = 0;
-tamanho = 1;
-tamanho_final = 1;
-tamanho_alvo = 1.2;
-
+tamanho_inicial = 0;
+tamanho = tamanho_inicial;
+tamanho_final = tamanho;
+tamanho_alvo = tamanho * 1.2;
+sprite = 0;

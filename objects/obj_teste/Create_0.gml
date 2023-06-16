@@ -1,6 +1,6 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
-var _inst = instance_create_layer(x, y, layer, obj_dialog);
+var _inst = instance_create_layer(640, 360, layer, obj_dialog);
 	with(_inst)
 	    {
 			text[0] = "Esse é um texto para testar a quebra de linha dos textos feitos no objeto que tem o proposito de criar textos e quebrar a linha quando necessário";

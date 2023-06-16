@@ -2,18 +2,17 @@
 // Você pode escrever seu código neste editor
 
 // Definindo arrays que armazenaram os dialogos
-text[0] = "Hello World!";
+text[0] = "";
 
 // Variáveis de controle do texto
 text_current = 0;
-text_last	 = 1;
+text_last	 = 0;
 text_width	 = 0;
 text_x		 = 0;
 text_y		 = 0;
 char_current = 1;
 char_speed   = 0.5;
 rmOrigem	 = 0;
-
 
 controleDialogo = function()
 {

@@ -1,1 +1,0 @@
-destino = rm_reciclagem;

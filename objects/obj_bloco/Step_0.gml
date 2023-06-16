@@ -1,9 +1,18 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 
-if (tipoBloco = 1) sprite = spr_direto;
-else if (tipoBloco = 2) sprite = spr_lateral;
-else sprite = spr_bloco;
+if (!ligado)
+{
+	if (tipoBloco = 1) sprite = spr_conduiteD;
+	else if (tipoBloco = 2) sprite = spr_conduiteL;
+	else sprite = spr_bloco;
+}
+else
+{
+	if (tipoBloco = 1 || tipoBloco = 0) sprite = spr_conduiteDC;
+	else if (tipoBloco = 2) sprite = spr_conduiteLC;
+	else sprite = spr_bloco;
+}
 
 
 sprite_index = sprite;
@@ -14,7 +23,7 @@ var _mouse_click = mouse_check_button_pressed(mb_left);
 
 if (_mouse_sobre)
 {
-	if (_mouse_click)
+	if (_mouse_click && tipoBloco != 0)
 	{
 		if (tipoBloco = 1)
 		{
