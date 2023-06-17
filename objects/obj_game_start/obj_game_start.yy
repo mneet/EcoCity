@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_botao",
-    "path": "sprites/spr_botao/spr_botao.yy",
+    "name": "spr_bt_startRosa",
+    "path": "sprites/spr_bt_startRosa/spr_bt_startRosa.yy",
   },
   "spriteMaskId": null,
   "visible": true,

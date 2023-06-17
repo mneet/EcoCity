@@ -1,3 +1,3 @@
 sprite = spr_botaoRec;
-destino = rm_menuSelect;
+destino = rm_reciclagem;
 tamanho_inicial = 1;

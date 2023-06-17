@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_popup",
+  "name": "obj_popUp",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -12,7 +12,10 @@
     "name": "UI",
     "path": "folders/Objects/UI.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_level_sel",
+    "path": "objects/obj_level_sel/obj_level_sel.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -29,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_botao",
-    "path": "sprites/spr_botao/spr_botao.yy",
+    "name": "spr_curiosidadeLaranja",
+    "path": "sprites/spr_curiosidadeLaranja/spr_curiosidadeLaranja.yy",
   },
   "spriteMaskId": null,
   "visible": true,

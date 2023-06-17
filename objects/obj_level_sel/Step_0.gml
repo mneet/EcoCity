@@ -5,13 +5,16 @@ if (sprite_index != sprite) sprite_index = sprite;
 if (tamanho = 0){
 	tamanho = tamanho_inicial;
 	tamanho_final = tamanho;
-	tamanho_alvo = tamanho * 1.2;
+	tamanho_alvo = tamanho * 1.1;
 }
 
 //Checando se o mouse esta por cima de mim
 var _mouse_sobre = position_meeting(mouse_x, mouse_y, id);
 //Checando se o mouse clicou
 var _mouse_click = mouse_check_button_pressed(mb_left);
+
+if (global.dialogoCntrl) image_alpha = .3;
+else image_alpha = 1;
 
 //Checando se o mouse esta por cima de mim E a pessoa clicou
 if (_mouse_sobre && !global.dialogoCntrl)

@@ -1,6 +1,13 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 
+if (sprite_index != sprite) sprite_index = sprite;
+if (tamanho = 0){
+	tamanho = tamanho_inicial;
+	tamanho_final = tamanho;
+	tamanho_alvo = tamanho * 1.1;
+}
+
 //Checando se o mouse esta por cima de mim
 var _mouse_sobre = position_meeting(mouse_x, mouse_y, id);
 //Checando se o mouse clicou
@@ -21,7 +28,7 @@ if (!global.start && !global.dialogoCntrl)
 	}
 	else
 	{
-		tamanho_final = 1;
+		tamanho_final = tamanho_inicial;
 	}
 }
 

@@ -2,7 +2,7 @@
 // Você pode escrever seu código neste editor
 
 var _mouse_sobre = position_meeting(mouse_x, mouse_y, id);
-var _rclick = mouse_check_button_pressed(mb_left);
+var _rclick = mouse_check_button(mb_left);
 
 if (_mouse_sobre && _rclick) 
 {

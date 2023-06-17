@@ -3,7 +3,7 @@
 
 if (keyboard_check_pressed(vk_space) or mouse_check_button_pressed(mb_left))
 {
-	var _len = string_length(text[text_current]);
+	var _len = string_length(texto[text_current]);
 	if (char_current < _len)
 	{
 		char_current = _len

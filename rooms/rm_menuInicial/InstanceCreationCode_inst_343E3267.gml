@@ -1,3 +1,3 @@
-sprite = spr_botao_jogar;
+sprite = spr_bt_jogarAzul;
 destino = rm_menuSelect;
 tamanho_inicial = 1;

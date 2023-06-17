@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_botao_jogar",
-    "path": "sprites/spr_botao_jogar/spr_botao_jogar.yy",
+    "name": "spr_bt_jogar",
+    "path": "sprites/spr_bt_jogar/spr_bt_jogar.yy",
   },
   "spriteMaskId": null,
   "visible": true,
