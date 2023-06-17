@@ -17,8 +17,8 @@ timer = timerTotal;
 criaTabuleiro = function()
 {	
 	var _jumpX = 0;
-	var _xx = 450;
-	var _yy = 105;
+	var _xx = 449;
+	var _yy = 104;
 	
 	for (i = 0; i < 20; i++)
 	{
@@ -28,7 +28,7 @@ criaTabuleiro = function()
 		
 		if (_jumpX = 3 )
 		{
-			_xx = 450;
+			_xx = 449;
 			_yy += 128 + margem;
 			_jumpX = 0;
 		}

@@ -9,5 +9,8 @@ if (global.start)
 		criaLevel();
 		levelCntrl = true;
 	}
-//	else checaLvl();
+	else checaLvl();
 }
+
+//debug
+if (keyboard_check(vk_space)) proxLvl = true;
