@@ -14,7 +14,7 @@ text_y		 = 32;
 char_current = 1;
 char_speed   = 0.5;
 rmOrigem	 = 0;
-
+fonte		 = fnt_dialog;
 
 controleDialogo = function()
 {

@@ -6,4 +6,5 @@ event_inherited();
 
 lido  = false;
 texto = " ";
+sprPersonagem = 0;
 

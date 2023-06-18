@@ -14,6 +14,7 @@ char_current = 1;
 char_speed   = 0.5;
 rmOrigem	 = 0;
 popUp        = 0;
+sprPersonagem   = 0;
 
 controleDialogo = function()
 {

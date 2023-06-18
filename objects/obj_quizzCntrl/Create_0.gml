@@ -7,6 +7,7 @@ pontos = 0;
 global.respCntrl = false;
 quizzEnd = false;
 listaCntrl = false;
+qtdPrgnt = 0;
 
 //Textos
 pergunta = "";
@@ -25,13 +26,14 @@ if (global.quizzCmpltd = false)
 			global.dialogoCntrl  = true;
 			rmOrigem = "Quizz";
 		    texto[0] = "Esse é um texto para testar a quebra de linha dos textos feitos no objeto que tem o proposito de criar textos e quebrar a linha quando necessário";
-		    texto[1] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+		    texto[1] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor. ";
 		    texto[2] = "magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.";
 		    texto[3] = "I talk too much!";
 		    text_last = 3;
 		    text_width = 870;
 		    text_x = 270;
 		    text_y = 480;
+			sprPersonagem = spr_chatPedro;
 	    }
 }
 
@@ -62,7 +64,6 @@ escPrgnt = function()
 	if (!quizzEnd)
 	{
 		ds_list_delete(lista_prgnts, 0);
-		show_debug_message(_valor);
 		switch(_valor)
 		{
 			case 1:
@@ -112,19 +113,20 @@ criaPrgnt = function()
 		escPrgnt();
 		if (!quizzEnd)
 		{
-			var _prgnt = instance_create_layer(288, 32, "Instances", obj_prgnt);	
+			qtdPrgnt++;
+			var _prgnt = instance_create_layer(160, 32, "Instances", obj_prgnt);	
 			_prgnt.text[0] = pergunta;
 		
-			var _resp1 = instance_create_layer(52, 448, "Instances", obj_resp);
+			var _resp1 = instance_create_layer(159, 380, "Instances", obj_resp);
 			_resp1.text[0] = resp1;
 		
-			var _resp2 = instance_create_layer(628, 448, "Instances", obj_resp);
+			var _resp2 = instance_create_layer(658, 380, "Instances", obj_resp);
 			_resp2.text[0] = resp2;
 		
-			var _resp3 = instance_create_layer(52, 576, "Instances", obj_resp);
+			var _resp3 = instance_create_layer(159, 544, "Instances", obj_resp);
 			_resp3.text[0] = resp3;
 		
-			var _resp4 = instance_create_layer(628, 576, "Instances", obj_resp);
+			var _resp4 = instance_create_layer(658, 544, "Instances", obj_resp);
 			_resp4.text[0] = resp4;
 
 			switch (respCrt)
@@ -151,8 +153,10 @@ criaPrgnt = function()
 		else 
 		{
 			global.start = false;
-			listaCntrl = false;
-			quizzEnd = false;
+			listaCntrl   = false;
+			quizzEnd	 = false;
+			pontos		 = 0;
+			qtdPrgnt	 = 0;
 		}
 	}
 }

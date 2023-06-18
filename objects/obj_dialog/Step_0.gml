@@ -1,6 +1,8 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 
+if (sprite_index != sprPersonagem) sprite_index = sprPersonagem;
+
 if (keyboard_check_pressed(vk_space) or mouse_check_button_pressed(mb_left))
 {
 	var _len = string_length(texto[text_current]);

@@ -2,10 +2,10 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_respQuizz",
-  "bbox_bottom": 101,
-  "bbox_left": 0,
-  "bbox_right": 511,
-  "bbox_top": 0,
+  "bbox_bottom": 151,
+  "bbox_left": 1,
+  "bbox_right": 470,
+  "bbox_top": 5,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"156cff18-b8d5-4c47-a545-97866caed330",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"40bf6aa9-ee1d-4850-a315-6bbdf7135566",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 102,
+  "height": 154,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"5fd0baeb-38b4-4b93-8721-8b2377432895","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4820bb2e-3ee3-4b37-9b53-b548c88c2382","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"156cff18-b8d5-4c47-a545-97866caed330","path":"sprites/spr_respQuizz/spr_respQuizz.yy",},},},"Disabled":false,"id":"589258ae-f56b-418f-b356-003f78512a69","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"40bf6aa9-ee1d-4850-a315-6bbdf7135566","path":"sprites/spr_respQuizz/spr_respQuizz.yy",},},},"Disabled":false,"id":"246c1224-c0d1-4369-8acf-f8b0bc19007e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 512,
+  "width": 472,
 }

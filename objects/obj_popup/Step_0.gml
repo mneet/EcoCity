@@ -36,6 +36,7 @@ if (_mouse_sobre && !global.dialogoCntrl)
 			    text_y = 480;
 				popUp  = other.id;
 				texto[0] = other.texto;
+				sprPersonagem = other.sprPersonagem;
 			}
 	}
 }

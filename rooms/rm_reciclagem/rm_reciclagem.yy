@@ -15,6 +15,7 @@
     {"name":"inst_61B1721","path":"rooms/rm_reciclagem/rm_reciclagem.yy",},
     {"name":"inst_42ABF3B1","path":"rooms/rm_reciclagem/rm_reciclagem.yy",},
     {"name":"inst_170BA898","path":"rooms/rm_reciclagem/rm_reciclagem.yy",},
+    {"name":"inst_795D7B38","path":"rooms/rm_reciclagem/rm_reciclagem.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -32,6 +33,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_61B1721","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_game_start","path":"objects/obj_game_start/obj_game_start.yy",},"properties":[],"rotation":0.0,"scaleX":0.7,"scaleY":0.7,"x":640.0,"y":320.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_42ABF3B1","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_level_sel","path":"objects/obj_level_sel/obj_level_sel.yy",},"properties":[],"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":96.0,"y":32.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_170BA898","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_rec_control","path":"objects/obj_rec_control/obj_rec_control.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1248.0,"y":0.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_795D7B38","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_popUp","path":"objects/obj_popUp/obj_popUp.yy",},"properties":[],"rotation":0.0,"scaleX":0.7,"scaleY":0.7,"x":1233.0,"y":675.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_1","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_5D4C1EFF","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":true,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":0.36888885,"scaleY":0.35111114,"spriteId":{"name":"cenario2_transformed","path":"sprites/cenario2_transformed/cenario2_transformed.yy",},"x":0.0,"y":-448.0,},

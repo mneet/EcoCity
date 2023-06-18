@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_chatEduardo",
-    "path": "sprites/spr_chatEduardo/spr_chatEduardo.yy",
+    "name": "spr_chat_vazio",
+    "path": "sprites/spr_chat_vazio/spr_chat_vazio.yy",
   },
   "spriteMaskId": null,
   "visible": true,

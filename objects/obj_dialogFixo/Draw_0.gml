@@ -3,8 +3,8 @@
 
 
 //Definindo fonte, cor e posição
-draw_set_font(fnt_dialog);
-draw_set_color(c_black);
+draw_set_font(fonte);
+draw_set_color(c_white);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 
@@ -16,4 +16,4 @@ if (char_current < _len)
 }
 
 var _str = string_copy(text[text_current], 1, char_current);
-draw_text_ext(text_x, text_y, _str, 25, text_width);
+draw_text_ext(text_x, text_y, _str, 30, text_width);

@@ -24,6 +24,7 @@ if (global.recCmpltd = false)
 		    text_width = 870;
 		    text_x = 270;
 		    text_y = 480;
+			sprPersonagem = spr_chatPedro;
 	    }
 }
 

@@ -10,9 +10,10 @@ if (!txtCntrl)
 	with(_inst)
 		{
 		text_last = 0;
-		text_width = 450;
-		text_x = x + 5;
-		text_y = y + 5;
+		text_width = 390;
+		text_x = x + 45;
+		text_y = y + 20;
+		fonte = fnt_dialog2;
 		}
 	txtCntrl = true;
 }
