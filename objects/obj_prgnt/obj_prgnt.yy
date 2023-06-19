@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_dialog_box",
-    "path": "sprites/spr_dialog_box/spr_dialog_box.yy",
+    "name": "spr_quizz_pergunta",
+    "path": "sprites/spr_quizz_pergunta/spr_quizz_pergunta.yy",
   },
   "spriteMaskId": null,
   "visible": true,

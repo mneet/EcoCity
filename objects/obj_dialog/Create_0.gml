@@ -16,6 +16,9 @@ rmOrigem	 = 0;
 popUp        = 0;
 sprPersonagem   = 0;
 
+
+//if (sprite_index != sprPersonagem) sprite_index = sprPersonagem;
+
 controleDialogo = function()
 {
 	global.dialogoCntrl = false;
@@ -27,6 +30,18 @@ controleDialogo = function()
 		case "Quizz":
 			global.quizzCmpltd = true;
 		break;
+		case "Energia":
+			global.energyCmpltd = true;
+		break;
+		case "EnergiaGame":
+			global.energyFCmpltd = true;
+		break;
+		case "Menu":
+			global.menuCmpltd = true;
+		break;
+		case "GameFinal":
+			global.start = false;
+			break;
 	}
 	if (popUp != 0) popUp.lido = true;
 }

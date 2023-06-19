@@ -3,11 +3,16 @@
 
 
 if (global.start) 
-{
+{	
 	if (listaCntrl = false)
-	{
+	{		
 		criaLista();
 		listaCntrl = true;
 	}
 	criaPrgnt();
+}
+else{
+	listaCntrl   = false;
+	quizzEnd	 = false;
+	pontos		 = 0;
 }

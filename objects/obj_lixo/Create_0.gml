@@ -5,6 +5,7 @@ randomize();
 tipo_lixo = choose("M", "O", "PA", "PL", "V");
 selecionado = false;
 visibilidade = image_alpha;
+timer = room_speed * 3;
 
 switch (tipo_lixo)
 {
@@ -26,3 +27,8 @@ switch (tipo_lixo)
 }
 
 
+autoDestroy = function()
+{
+	timer--;
+	if (timer <= 0) instance_destroy();
+}

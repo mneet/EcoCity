@@ -11,3 +11,6 @@ else
 	screenshake(10);
 	instance_destroy();
 }
+
+obj_rec_control.mouseControl = false;
+

@@ -5,14 +5,20 @@ global.tabuleiro = array_create(20);
 tabCntrl  = false;
 margem = 0;
 i = 0;
-levelEnrg = 1;
+levelEnrg = 5;
 levelTot  = 5;
 levelCntrl = false;
-proxLvl = false;
-botFlag = false;
+lvlCmpltd = false;
 
 timerTotal = room_speed * 1;
 timer = timerTotal;
+
+
+// Controle de Dialogo
+if (global.energyFCmpltd = false)
+{
+	criaDialogo("rm_energy2");
+}
 
 criaTabuleiro = function()
 {	
@@ -53,11 +59,7 @@ criaLevel = function()
 	
 	for (i = 0; i < 20; i++)
 	{
-		if (i = 0) {
-			global.tabuleiro[i].ligado = true;
-			global.tabuleiro[i].image_angle += 90;
-			if (global.tabuleiro[i].tipoBloco = 2) image_angle = 180;
-		}
+		global.tabuleiro[i].ligado = false;
 		global.tabuleiro[i].anguloCrt = angBloco[i];
 		global.tabuleiro[i].tipoBloco = tipoBloco[i];
 //		global.tabuleiro[i].blocoAtual  = i;
@@ -65,8 +67,9 @@ criaLevel = function()
 		else if (tipoBloco[i] = 2) global.tabuleiro[i].image_angle = choose(0, 90, 180, 270);
 		
 		global.tabuleiro[i].blocoOrdem = ordBloco;
-		
+		global.tabuleiro[i].checaOrdem();
 	}
+	
 
 }
 
@@ -96,35 +99,9 @@ escolheLvl = function()
 			break;
 		case 5:
 			 angBloco  = [0,0,0,0,0,90,180,0,0,0,0,0,0,0,0,0,0,0,0,90];
-			 tipoBloco = [2,0,0,0,2,1,2,0,0,0,1,0,0,0,1,0,0,0,2,1];
+			 tipoBloco = [3,0,0,0,2,1,2,0,0,0,1,0,0,0,1,0,0,0,2,1];
 			 ordBloco  = [0,4,5,6,10,14,18,19];
 			break;
 	}
 }
 
-checaLvl = function()
-{
-
-	if (proxLvl)
-	{
-		timer--;
-		if (timer <= 0) 
-		{
-			instance_destroy(obj_bloco, all);
-			timer = timerTotal;
-			if (levelEnrg < levelTot)
-			{
-				tabCntrl = false;
-				levelEnrg++;
-				proxLvl = false;
-				botFlag = false;
-			}
-			else
-			{
-				show_debug_message("acabo");
-				global.start = false;
-			}
-		}
-
-		}
-}

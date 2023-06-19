@@ -1,0 +1,1 @@
+if (!global.energyCmpltd) criaDialogo("rm_energy1");

@@ -12,6 +12,7 @@ tipoBloco = 0;
 
 checaOrdem = function()
 {
+	
 	var todosCorretos = true;
 	var iSize = array_length(blocoOrdem);
 	for (var i = 1; i < iSize; i++)
@@ -24,9 +25,15 @@ checaOrdem = function()
 			todosCorretos = false;
 
 		}
-
 	}
+	
 
 }
 
-checaOrdem();
+checaLvl = function()
+{
+	if (global.tabuleiro[19].ligado = true)
+	{
+		obj_energy_next.bloqueado = false;	
+	}
+}

@@ -1,0 +1,1 @@
+if (!global.menuCmpltd) criaDialogo("rm_menu1");

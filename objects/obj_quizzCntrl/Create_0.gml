@@ -7,7 +7,7 @@ pontos = 0;
 global.respCntrl = false;
 quizzEnd = false;
 listaCntrl = false;
-qtdPrgnt = 0;
+qtdPrgnt = 5;
 
 //Textos
 pergunta = "";
@@ -20,21 +20,7 @@ resp4	 = "";
 // Controle de Dialogo
 if (global.quizzCmpltd = false)
 {
-	var _inst = instance_create_layer(0, 0, "Dialog", obj_dialog);
-	with(_inst)
-	    {
-			global.dialogoCntrl  = true;
-			rmOrigem = "Quizz";
-		    texto[0] = "Esse é um texto para testar a quebra de linha dos textos feitos no objeto que tem o proposito de criar textos e quebrar a linha quando necessário";
-		    texto[1] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor. ";
-		    texto[2] = "magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.";
-		    texto[3] = "I talk too much!";
-		    text_last = 3;
-		    text_width = 870;
-		    text_x = 270;
-		    text_y = 480;
-			sprPersonagem = spr_chatPedro;
-	    }
+	criaDialogo("rm_quizz1");
 }
 
 //Iniciando lista de perguntas
@@ -152,11 +138,9 @@ criaPrgnt = function()
 		}
 		else 
 		{
-			global.start = false;
-			listaCntrl   = false;
-			quizzEnd	 = false;
-			pontos		 = 0;
-			qtdPrgnt	 = 0;
+			if (global.quizzRecorde < pontos) global.quizzRecorde = pontos;
+			criaDialogo("rm_quizzFinal");
+
 		}
 	}
 }
