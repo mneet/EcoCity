@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_lxra_metal",
-    "path": "sprites/spr_lxra_metal/spr_lxra_metal.yy",
+    "name": "spr_lixeiraMetal",
+    "path": "sprites/spr_lixeiraMetal/spr_lixeiraMetal.yy",
   },
   "spriteMaskId": null,
   "visible": true,

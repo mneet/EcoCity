@@ -7,7 +7,7 @@ pontos = 0;
 global.respCntrl = false;
 quizzEnd = false;
 listaCntrl = false;
-qtdPrgnt = 5;
+qtdPrgnt = 0;
 
 //Textos
 pergunta = "";

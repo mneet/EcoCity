@@ -10,19 +10,19 @@ timer = room_speed * 3;
 switch (tipo_lixo)
 {
 	case "M":
-		sprite_index = spr_metal;
+		sprite_index = choose(spr_metal, spr_metal2);
 		break;
 	case "O":
-		sprite_index = spr_organico;
+		sprite_index = choose(spr_organico, spr_organico2);
 		break;
 	case "PA":
-		sprite_index = spr_papel;
+		sprite_index = choose(spr_papel, spr_papel2);
 		break;
 	case "PL":
-		sprite_index = spr_plastico;
+		sprite_index = choose(spr_plastico, spr_plastico2);
 		break;
 	case "V":
-		sprite_index = spr_vidro;
+		sprite_index = choose(spr_vidro, spr_vidro2);
 		break;		
 }
 

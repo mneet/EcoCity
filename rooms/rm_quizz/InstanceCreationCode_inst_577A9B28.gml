@@ -1,0 +1,1 @@
+sprite = spr_bt_homeTurquesa;

@@ -12,7 +12,7 @@ text_width	 = 600;
 text_x		 = 32;
 text_y		 = 32;
 char_current = 1;
-char_speed   = 0.5;
+char_speed   = 1;
 rmOrigem	 = 0;
 fonte		 = fnt_dialog;
 

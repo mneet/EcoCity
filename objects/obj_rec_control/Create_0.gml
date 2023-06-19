@@ -1,6 +1,6 @@
  /// @description Iniciando variáveis e métodos
 
-timer_total = 5 * room_speed;
+timer_total = 30 * room_speed;
 timer = timer_total;
 pontos = 0;
 lixo_respawn_cdTot = room_speed * 2;
@@ -34,7 +34,7 @@ game_start = function()
 			if (lixo_respawn <= 0)
 			{
 				lixo_spawn();
-				lixo_respawn_cd -= 0.03 * room_speed;
+				lixo_respawn_cd -= 0.04 * room_speed;
 				lixo_respawn = lixo_respawn_cd;
 			}
 		
