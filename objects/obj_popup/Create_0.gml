@@ -5,6 +5,7 @@
 event_inherited();
 
 lido  = false;
-texto = " ";
-sprPersonagem = 0;
+nomeDialogo = " ";
+sprite = 0;
+
 

@@ -30,5 +30,8 @@ switch (tipo_lixo)
 autoDestroy = function()
 {
 	timer--;
-	if (timer <= 0) instance_destroy();
+	if (timer <= 0){
+		instance_destroy();
+		obj_rec_control.mouseControl = false;
+	}
 }

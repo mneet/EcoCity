@@ -9,6 +9,7 @@ quizzEnd = false;
 listaCntrl = false;
 qtdPrgnt = 0;
 
+quizInd = 0;
 //Textos
 pergunta = "";
 resp1    = "";
@@ -20,7 +21,7 @@ resp4	 = "";
 // Controle de Dialogo
 if (global.quizzCmpltd = false)
 {
-	criaDialogo("rm_quizz1");
+	criaDialogo("rm_quiz1");
 }
 
 //Iniciando lista de perguntas
@@ -30,7 +31,7 @@ criaLista = function()
 	lista_prgnts = ds_list_create();
 
 	// Adiciona os valores de 1 a 5 à lista 
-	for (var i = 1; i <= 4; i++) { ds_list_add(lista_prgnts, i); }
+	for (var i = 1; i <= 16; i++) { ds_list_add(lista_prgnts, i); }
 	ds_list_shuffle(lista_prgnts);
 }
 
@@ -39,7 +40,7 @@ criaLista = function()
 //Base de perguntas e respostas
 escPrgnt = function()
 {
-	if (ds_list_size(lista_prgnts) > 0) 
+	if (quizInd < 5) 
 	{
 		var _valor = ds_list_find_value(lista_prgnts, 0);
 
@@ -49,6 +50,7 @@ escPrgnt = function()
 	
 	if (!quizzEnd)
 	{
+		quizInd++;
 		ds_list_delete(lista_prgnts, 0);
 		switch(_valor)
 		{
@@ -84,6 +86,102 @@ escPrgnt = function()
 				resp4	 = "Reduzir a quantidade de resíduos e promover a reutilização de materiais";
 				respCrt  = 4;
 			break;
+			case 5:
+			      pergunta= "Qual é o principal objetivo da sustentabilidade ambiental?";
+			      resp1= "Preservar os recursos naturais para as gerações futuras.";
+			      resp2= "Maximizar os lucros das empresas.";
+			      resp3= "Aumentar o consumo de energia.";
+			      resp4= "Reduzir a quantidade de lixo produzido.";
+			      respCrt= 1;
+			      break;
+			case 6:
+			    pergunta = "O que significa o conceito dos 3Rs da sustentabilidade?";
+			    resp1 = "Reciclar, Reparar, Reutilizar.";
+			    resp2 = "Reduzir, Reciclar, Replantar.";
+			    resp3 = "Respeitar, Reutilizar, Recuperar.";
+			    resp4 = "Reduzir, Reciclar, Reutilizar.";
+			    respCrt = 4;
+			    break;
+			case 7:
+			    pergunta = "Qual é a forma correta de descartar uma lâmpada fluorescente usada?";
+			    resp1 = "Jogá-la no lixo comum.";
+			    resp2 = "Colocá-la no recipiente de vidro reciclável.";
+			    resp3 = "Enterrá-la no jardim.";
+			    resp4 = "Levá-la a um ponto de coleta específico para descarte adequado.";
+			    respCrt = 4;
+			    break;
+			case 8:
+			    pergunta = "O que são cidades inteligentes?";
+			    resp1 = "Cidades com muitos arranha-céus.";
+			    resp2 = "Cidades com alta concentração de indústrias.";
+			    resp3 = "Cidades que utilizam tecnologia para melhorar a qualidade de vida dos moradores e otimizar o uso de recursos.";
+			    resp4 = "Cidades com um grande número de habitantes.";
+			    respCrt = 3;
+			    break;
+			case 9:
+				pergunta = "Qual é a principal vantagem da coleta seletiva de lixo?";
+				resp1 = "Redução da quantidade de lixo produzido.";
+				resp2 = "Aumento dos lucros das empresas de reciclagem.";
+				resp3 = "Melhoria na qualidade do ar.";
+				resp4 = "Possibilidade de reciclar materiais e reduzir a contaminação do meio ambiente.";
+				respCrt = 4;
+				break;
+			case 10:
+			    pergunta = "Como as cidades inteligentes podem contribuir para a redução do consumo de energia?";
+			    resp1 = "Aumentando o uso de dispositivos eletrônicos.";
+			    resp2 = "Implementando sistemas de iluminação pública ineficientes.";
+			    resp3 = "Utilizando sensores para monitorar e otimizar o uso de energia em edifícios e infraestruturas.";
+			    resp4 = "Aumentando a produção de energia a partir de combustíveis fósseis.";
+			    respCrt = 3;
+			    break;
+			case 11:
+				pergunta = "Qual das seguintes opções é considerada uma fonte de energia renovável?";
+				resp1 = "Carvão mineral";
+				resp2 = "Petróleo";
+				resp3 = "Gás natural";
+				resp4 = "Energia solar";
+				respCrt = 4;
+				break;
+			case 12:
+			    pergunta = "Qual é uma das formas de conservação da água em ambientes urbanos?";
+			    resp1 = "Aumentar o uso de fontes não renováveis";
+			    resp2 = "Desperdiçar água tratada";
+			    resp3 = "Utilizar dispositivos economizadores de água";
+			    resp4 = "Ignorar vazamentos de água";
+			    respCrt = 3;
+			    break;
+			case 13:
+			    pergunta = "O que é a compostagem?";
+			    resp1 = "Processo de reciclagem de vidros";
+			    resp2 = "Método para armazenar produtos eletrônicos antigos";
+			    resp3 = "Técnica de decomposição de resíduos orgânicos para produção de adubo";
+			    resp4 = "Processo de recuperação de metais de sucata";
+			    respCrt = 3;
+			    break;
+			case 14:
+			    pergunta = "O que é eficiência energética?";
+			    resp1 = "Uso intenso de energia para maximizar a produção";
+			    resp2 = "Aproveitamento máximo de recursos naturais";
+			    resp3 = "Uso racional de energia para reduzir o consumo e os desperdícios";
+			    resp4 = "Desenvolvimento de tecnologias que não necessitam de energia";
+			    respCrt = 3;
+			    break;
+			case 15:
+			    pergunta = "O que são os Objetivos de Desenvolvimento Sustentável (ODS)?";
+			    resp1 = "Metas estabelecidas pela ONU para o desenvolvimento sustentável até 2030";
+			    resp2 = "Estratégias para maximizar o consumo de recursos naturais";
+			    resp3 = "Normas de sustentabilidade aplicadas somente em países desenvolvidos";
+			    resp4 = "Diretrizes para aumentar a produção de lixo eletrônico";
+			    respCrt = 1;
+			    break;
+			case 16:
+			    pergunta = "Qual é a importância da educação ambiental para a sustentabilidade?";
+			    resp1 = "Conscientização sobre a importância da reciclagem";
+			    resp2 = "Desenvolvimento de novas tecnologias verdes";
+			    resp3 = "Promoção de eventos sustentáveis";
+			    resp4 = "Capacitação da população para tomar decisões mais sustentáveis no dia a dia";
+			    respCrt = 4;
+			    break;
 
 		}
 	}
@@ -139,7 +237,8 @@ criaPrgnt = function()
 		else 
 		{
 			if (global.quizzRecorde < pontos) global.quizzRecorde = pontos;
-			criaDialogo("rm_quizzFinal");
+			if (pontos < 3)	criaDialogo("rm_quizFinal2");
+			else criaDialogo("rm_quizFinal");
 
 		}
 	}

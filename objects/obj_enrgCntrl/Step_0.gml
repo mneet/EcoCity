@@ -30,6 +30,7 @@ if (global.start)
 else {
 	if (instance_exists(obj_bloco)) instance_destroy(obj_bloco, all);
 	levelEnrg = 1;
+	tabCntrl = false;
 }
 //debug
 

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_curiosidadeVermelho",
+  "name": "spr_curiosidadeRosa",
   "bbox_bottom": 118,
   "bbox_left": 0,
   "bbox_right": 120,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_curiosidadeVermelho",
+    "name": "spr_curiosidadeRosa",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1f04979d-d26e-4639-9283-0e93845c0c89","path":"sprites/spr_curiosidadeVermelho/spr_curiosidadeVermelho.yy",},},},"Disabled":false,"id":"8f73e690-f36c-4e96-86d8-0f114e0f671e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1f04979d-d26e-4639-9283-0e93845c0c89","path":"sprites/spr_curiosidadeRosa/spr_curiosidadeRosa.yy",},},},"Disabled":false,"id":"8f73e690-f36c-4e96-86d8-0f114e0f671e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

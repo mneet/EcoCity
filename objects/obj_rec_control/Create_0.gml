@@ -33,7 +33,7 @@ game_start = function()
 			lixo_respawn--;
 			if (lixo_respawn <= 0)
 			{
-				lixo_spawn();
+				lixo_spawn(); 
 				lixo_respawn_cd -= 0.04 * room_speed;
 				lixo_respawn = lixo_respawn_cd;
 			}
@@ -44,7 +44,7 @@ game_start = function()
 			if (instance_exists(obj_lixo)) instance_destroy(obj_lixo, all);
 			gameEnd = true;
 			if (gameEnd){
-				if (pontos > global.recRecorde) global.quizzRecorde = pontos;
+				if (pontos > global.recRecorde) global.recRecorde = pontos;
 				criaDialogo("rm_recGameFinal");			
 			}
 		}

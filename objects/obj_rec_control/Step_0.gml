@@ -1,7 +1,12 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 
-if (global.start) game_start();
+if (global.start) {
+	if (!global.recGCmpltd){
+		if(!instance_exists(obj_dialog)) criaDialogo("rm_recG");
+	}
+	else game_start();
+}
 else{
 	timer = timer_total;
 	gameEnd = false;

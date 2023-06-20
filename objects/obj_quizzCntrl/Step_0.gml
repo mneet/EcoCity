@@ -15,4 +15,7 @@ else{
 	listaCntrl   = false;
 	quizzEnd	 = false;
 	pontos		 = 0;
+	prgntAtiva   = false
+	quizInd      = 0;
+	qtdPrgnt	 = 0;
 }

@@ -11,7 +11,7 @@ text_width	 = 0;
 text_x		 = 0;
 text_y		 = 0;
 char_current = 1;
-char_speed   = 0.5;
+char_speed   = 1;
 rmOrigem	 = 0;
 popUp        = 0;
 sprPersonagem   = 0;
@@ -27,7 +27,7 @@ controleDialogo = function()
 		case "Rec":
 			global.recCmpltd = true;
 		break;
-		case "Quizz":
+		case "Quiz":
 			global.quizzCmpltd = true;
 		break;
 		case "Energia":
@@ -41,6 +41,9 @@ controleDialogo = function()
 		break;
 		case "GameFinal":
 			global.start = false;
+			break;
+		case "GameInicial":
+			global.recGCmpltd = true;
 			break;
 	}
 	if (popUp != 0) popUp.lido = true;

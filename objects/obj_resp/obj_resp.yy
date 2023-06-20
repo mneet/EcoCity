@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Quizz",
-    "path": "folders/Objects/Quizz.yy",
+    "name": "Quiz",
+    "path": "folders/Objects/Quiz.yy",
   },
   "parentObjectId": null,
   "persistent": false,

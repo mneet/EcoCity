@@ -1,4 +1,3 @@
-sprite = spr_bt_interrogRosa;
+sprite = spr_curiosidadeRosa;
 tamanho_inicial = .7;
-sprPersonagem = spr_chatEduardo;
-texto = "Você sabia  que blabalblablablabla"; 
+nomeDialogo = "rm_rec1";
