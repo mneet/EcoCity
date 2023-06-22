@@ -1,13 +1,16 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 
+//Estado ligado e sprite caso seja o primeiro bloco 
 if (global.tabuleiro[0].id = id && !ligado){
 	ligado = true;
 	if (tipoBloco = 0) image_angle = 90;
 	else if (tipoBloco = 3) image_angle = 180;
 }
 
+if (tipoBloco = 4) tipoBloco = choose(1,2);
 
+//Troca de sprite baseada no tipoBloco e estado
 if (!ligado)
 {
 	if (tipoBloco = 1) sprite = spr_conduiteD;
@@ -45,8 +48,9 @@ if (_mouse_sobre)
 				if (image_angle >= 270) image_angle = 0;
 				else image_angle += 90;
 			}
-			checaOrdem();
-			checaLvl();
+			//checaOrdem();
+
+
 
 		}
 		if (_mouse_click_direito)
@@ -61,9 +65,10 @@ if (_mouse_sobre)
 				if (image_angle = 0) image_angle = 270;
 				else image_angle -= 90;
 			}
-			checaOrdem();
-			checaLvl();
+			//checaOrdem();
 
 		}
 	}
 }
+
+checaFluxo();

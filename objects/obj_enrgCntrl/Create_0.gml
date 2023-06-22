@@ -1,6 +1,10 @@
-/// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
+/// @description Iniciando variáveis e funções do controlador do minigame de Energia
+
+//Garantir aleatoriedade
 randomize();
+
+//Iniciando variáveis
+
 global.tabuleiro = array_create(20);
 tabCntrl  = false;
 margem = 0;
@@ -20,6 +24,7 @@ if (global.energyFCmpltd = false)
 	criaDialogo("rm_energy2");
 }
 
+// Crio os blocos de energia nas posições corretas
 criaTabuleiro = function()
 {	
 	var _jumpX = 0;
@@ -50,58 +55,67 @@ criaTabuleiro = function()
 	tabCntrl = true;
 }
 
+//Distribuo definições dos levels pré-definidos
 criaLevel = function()
 {
-	angBloco  = [0];
 	tipoBloco = [0];
-	ordBloco  = [0];
 	escolheLvl();
 	
 	for (i = 0; i < 20; i++)
 	{
 		global.tabuleiro[i].ligado = false;
-		global.tabuleiro[i].anguloCrt = angBloco[i];
 		global.tabuleiro[i].tipoBloco = tipoBloco[i];
-//		global.tabuleiro[i].blocoAtual  = i;
 		if (tipoBloco[i] = 1) global.tabuleiro[i].image_angle = choose(0, 90);
 		else if (tipoBloco[i] = 2) global.tabuleiro[i].image_angle = choose(0, 90, 180, 270);
 		
-		global.tabuleiro[i].blocoOrdem = ordBloco;
-		global.tabuleiro[i].checaOrdem();
 	}
 	
 
 }
 
+//Armazenamento de levels 
 escolheLvl = function()
 {
 	switch(levelEnrg)
 	{
 		case 1:
-			angBloco  = [0,0,0,0,0,90,180,0,0,0,0,0,0,0,0,0,0,0,0,90];
 			tipoBloco = [3,0,0,0,2,1,2,0,0,0,1,0,0,0,1,0,0,0,2,1];
-			ordBloco  = [0,4,5,6,10,14,18,19];
 			break;
 		case 2:
-			 angBloco  = [0,90,90,180,0,0,0,0,0,270,90,90,0,0,0,0,0,0,90,90];
-			 tipoBloco = [0,1,1,2,0,0,0,1,0,2,1,2,20,1,0,0,0,2,1,1];
-			 ordBloco  = [0,1,2,3,7,11,10,9,13,17,18,19];
+			 tipoBloco = [0,1,1,2,0,0,0,1,0,2,1,2,2,1,0,0,0,2,1,1];
 			break;
 		case 3:
-			 angBloco  = [0,90,180,0,0,0,0,180,270,90,90,90,0,0,0,0,0,90,90,90];
+
 			 tipoBloco = [0,1,2,0,0,0,2,2,2,1,1,2,1,0,0,0,2,1,1,1];
-			 ordBloco  = [0,1,2,6,7,11,10,9,8,12,16,17,18,19];
 			break;
 		case 4:
-			 angBloco  = [0,180,0,0,0,0,180,0,270,90,90,0,0,0,0,0,0,90,90,90];
 			 tipoBloco = [0,2,0,0,0,2,2,0,2,1,2,0,1,0,0,0,2,1,1,1];
-			 ordBloco  = [0,1,5,6,10,9,8,12,16,17,18,19];
 			break;
 		case 5:
-			 angBloco  = [0,90,90,180,270,180,0,0,0,0,90,90,0,0,0,0,0,90,90,90];
 			 tipoBloco = [0,1,1,2,2,2,0,1,1,2,1,2,1,0,0,0,2,1,1,1];
-			 ordBloco  = [0,1,2,3,7,11,10,9,5,4,8,12,16,17,18,19];
 			break;
 	}
 }
 
+//Reseto blocos e fluxos existentes
+limpaLevel = function()
+{
+	if (instance_exists(obj_fluxo)) instance_destroy(obj_fluxo, all);
+	for (i = 0; i < 20; i++)
+	{
+		global.tabuleiro[i].ligado		= false;	
+		global.tabuleiro[i].blocoOrdem  = 0;
+		global.tabuleiro[i].meuFluxo    = 0;
+		global.tabuleiro[i].fornecedor  = 0;
+
+	}
+}
+
+//Checo se o level está completo
+checaLvl = function()
+{
+	if (global.tabuleiro[19].ligado = true)
+	{
+		obj_energy_next.bloqueado = false;	
+	}
+}

@@ -1,7 +1,7 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 
-if (global.start)
+if (global.start) //Se jogo iniciado, crio tabuleiro e distribuo level caso já não tenha feito
 {
 	if (!tabCntrl)
 	{
@@ -9,16 +9,17 @@ if (global.start)
 		criaLevel();
 		levelCntrl = true;
 	}
-	else 
+	else //Checo se level foi completo, caso sim limpo o level e crio o próximo;
 	{
-		//checaLvl();
+		checaLvl();
 		if (lvlCmpltd = true) {
 			levelEnrg++;
 			if (levelEnrg <= levelTot)
-			{
+			{	
+				limpaLevel();
 				criaLevel();
 			}
-			else
+			else //Caso tenha chego ao fim, inicio dialogo final e finalizo o jogo
 			{
 				criaDialogo("rm_energyGameFinal");
 
@@ -27,10 +28,11 @@ if (global.start)
 		}
 	}
 }
-else {
+else { //Destruo blocos, fluxos e reseto variaveis caso o jogo tenha acabado.
 	if (instance_exists(obj_bloco)) instance_destroy(obj_bloco, all);
+	if (instance_exists(obj_fluxo)) instance_destroy(obj_fluxo, all);
 	levelEnrg = 1;
 	tabCntrl = false;
 }
-//debug
+
 

@@ -23,7 +23,7 @@ else{
 }
 
 //Checando se o mouse esta por cima de mim E a pessoa clicou
-if (_mouse_sobre && !global.dialogoCntrl)
+if (_mouse_sobre && !global.dialogoCntrl && !global.start)
 {
 	//Mudar tamanho
 	tamanho_final = tamanho_alvo;
