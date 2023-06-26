@@ -4,13 +4,15 @@
 // Definindo arrays que armazenaram os dialogos
 text[0] = "";
 txtCntrl = false;
+timer = room_speed * 2;
+image_alpha = 0;
 
 alphaDestroy = function()
 {
 	if (global.respCntrl = true)
 	{
-		image_alpha -= 0.05;
-		if (image_alpha <= 0) 
+		timer--;
+		if (timer <= 0) 
 		{
 			global.respCntrl = false;
 			obj_quizzCntrl.prgntAtiva = false;

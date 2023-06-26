@@ -7,6 +7,10 @@ if (global.tabuleiro[0].id = id && !ligado){
 	if (tipoBloco = 0) image_angle = 90;
 	else if (tipoBloco = 3) image_angle = 180;
 }
+else if (global.tabuleiro[19].id = id){
+	if (tipoBloco = 1) image_angle = 90;
+	bloqueado = true;
+}
 
 if (tipoBloco = 4) tipoBloco = choose(1,2);
 
@@ -32,7 +36,7 @@ var _mouse_sobre = position_meeting(mouse_x, mouse_y, id);
 var _mouse_click_direito  = mouse_check_button_pressed(mb_right);
 var _mouse_click_esquerdo = mouse_check_button_pressed(mb_left);
 
-if (_mouse_sobre)
+if (_mouse_sobre && !bloqueado)
 {
 	if (tipoBloco = 1 || tipoBloco = 2)
 	{

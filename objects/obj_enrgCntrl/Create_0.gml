@@ -9,10 +9,11 @@ global.tabuleiro = array_create(20);
 tabCntrl  = false;
 margem = 0;
 i = 0;
-levelEnrg = 1;
+levelEnrg = 0;
 levelTot  = 5;
+
 levelCntrl = false;
-lvlCmpltd = false;
+lvlCmpltd  = false;
 
 timerTotal = room_speed * 1;
 timer = timerTotal;
@@ -22,6 +23,15 @@ timer = timerTotal;
 if (global.energyFCmpltd = false)
 {
 	criaDialogo("rm_energy2");
+}
+
+criaLista = function()
+{
+	listaLevel = ds_list_create();
+
+	// Adiciona os valores de 1 a 5 à lista 
+	for (var i = 1; i <= 10; i++) { ds_list_add(listaLevel, i); }
+	if (global.energyGameC)ds_list_shuffle(listaLevel);
 }
 
 // Crio os blocos de energia nas posições corretas
@@ -76,10 +86,15 @@ criaLevel = function()
 //Armazenamento de levels 
 escolheLvl = function()
 {
-	switch(levelEnrg)
+	if (ds_list_size(listaLevel) > 0) 
+	{
+		var _valor = ds_list_find_value(listaLevel, 0);
+		show_debug_message(_valor)
+	}
+	switch(_valor)
 	{
 		case 1:
-			tipoBloco = [3,0,0,0,2,1,2,0,0,0,1,0,0,0,1,0,0,0,2,1];
+			tipoBloco  = [3,0,0,0,2,1,2,0,0,0,1,0,0,0,1,0,0,0,2,1];
 			break;
 		case 2:
 			 tipoBloco = [0,1,1,2,0,0,0,1,0,2,1,2,2,1,0,0,0,2,1,1];
@@ -94,7 +109,23 @@ escolheLvl = function()
 		case 5:
 			 tipoBloco = [0,1,1,2,2,2,0,1,1,2,1,2,1,0,0,0,2,1,1,1];
 			break;
+		case 6:
+			tipoBloco  = [3,2,2,4,2,2,1,0,0,4,1,4,0,0,1,4,0,0,2,1];
+			break;
+		case 7:
+			tipoBloco  = [3,2,1,2,2,2,4,1,2,1,1,2,1,4,4,4,2,1,1,1];
+			break;
+		case 8:
+			tipoBloco  = [3,4,4,4,2,2,0,4,2,2,0,0,1,2,2,4,2,2,2,1];
+			break;
+		case 9:
+			tipoBloco  = [3,2,1,2,2,2,4,1,2,1,1,2,1,2,2,0,2,2,2,1];
+			break;
+		case 10:
+			tipoBloco  = [3,4,2,2,2,2,1,1,2,2,1,1,2,1,2,1,4,0,2,1];
+			break;
 	}
+	ds_list_delete(listaLevel, 0);
 }
 
 //Reseto blocos e fluxos existentes

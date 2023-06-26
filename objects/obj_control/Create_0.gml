@@ -8,9 +8,11 @@ global.recGCmpltd     = false;
 global.quizzCmpltd	  = false;
 global.energyCmpltd	  = false;
 global.energyFCmpltd  = false;
+global.energyGameC    = false;
 global.menuCmpltd     = false;
 global.start		  = false;
 global.shake		  = 0;
+
 
 
 //Recordes

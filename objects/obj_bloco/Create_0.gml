@@ -4,6 +4,7 @@ sprite	    = 0;
 ligado      = false;
 meuFluxo    = false;
 fornecedor  = 0;
+bloqueado   = 0;
 
 // 0 = Fixo || 1 = Direto || 2 = Lateral || 4 = random
 tipoBloco = 0;
