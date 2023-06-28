@@ -9,6 +9,7 @@ if (global.start) //Se jogo iniciado, crio tabuleiro e distribuo level caso já 
 		criaTabuleiro();
 		criaLevel();
 		levelCntrl = true;
+		if (instance_exists(obj_energy_next)) obj_energy_next.bloqueado = true;
 	}
 	else //Checo se level foi completo, caso sim limpo o level e crio o próximo;
 	{
@@ -20,6 +21,7 @@ if (global.start) //Se jogo iniciado, crio tabuleiro e distribuo level caso já 
 			{	
 				limpaLevel();
 				criaLevel();
+				if (instance_exists(obj_energy_next)) obj_energy_next.bloqueado = true;
 			}
 			else //Caso tenha chego ao fim, inicio dialogo final e finalizo o jogo
 			{
