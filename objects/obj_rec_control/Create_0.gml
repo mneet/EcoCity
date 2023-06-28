@@ -34,7 +34,7 @@ game_start = function()
 			if (lixo_respawn <= 0)
 			{
 				lixo_spawn(); 
-				lixo_respawn_cd -= 0.04 * room_speed;
+				lixo_respawn_cd -= 0.06 * room_speed;
 				lixo_respawn = lixo_respawn_cd;
 			}
 		

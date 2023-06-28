@@ -29,7 +29,7 @@ if (_mouse_sobre && !global.dialogoCntrl)
 {
 	//Mudar tamanho
 	tamanho_final = tamanho_alvo;
-	if (_mouse_click)
+	if (_mouse_click && !global.respCntrl)
 	{
 		if (resCerta) obj_quizzCntrl.pontos++;
 		else screenshake(5);	
