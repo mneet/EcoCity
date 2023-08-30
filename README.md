@@ -7,5 +7,3 @@ O projeto foi desenvolvido durante a disciplina de UPX 1 no Centro Universitári
 
 Relátorio do projeto:
 [UPX1 EcoCity - Entrega Final.pdf](https://github.com/mneet/EcoCity/files/12477850/UPX1.EcoCity.-.Entrega.Final.pdf)
-
-![](https://github.com/mneet/EcoCity/blob/main/gitImagens/videopitchEcoCIty.mp4?raw=true)
