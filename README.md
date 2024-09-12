@@ -1,3 +1,5 @@
+Nota do desenvolvedor: Este projeto utilizou artes geradas por inteligência artificial, uma prática que atualmente não apoio nem utilizo. Apesar das circunstâncias na época do desenvolvimento do projeto, hoje reconheço que poderia ter explorado outras opções.
+
 # EcoCity
 
 ![Apresentação](https://github.com/mneet/EcoCity/blob/main/gitImagens/apresentacao.gif?raw=true)
